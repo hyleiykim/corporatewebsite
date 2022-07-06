@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://kit.fontawesome.com/09eb5b1e7d.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<title>HOMEPAGE</title>
+
+	<style>
+		#goUp {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 12px;
+                border: none;
+                outline: none;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+            }
+
+        .carousel-item img {
+                width: 1060px;
+                height: 450px;
+        }
+
+        .card-img-top {
+    		width: 100%;
+    		height: 30vw;
+    		object-fit: cover;
+		}	
+
+
+	</style>
+
+</head>
+
+
+<body>
+
+	<!-- TOP FUNCTION -->
+    <button onclick="topFunction()" id="goUp" title="Go to home">Top</button>
+
+    <!-- NAVBAR -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  		<div class="container-fluid">
+    		<a class="navbar-brand" href="index.html">ARKA SHOP</a>
+  		</div>
+
+  		<form class="d-flex">
+        	<input class="form-control me-2" type="text" placeholder="Search">
+        	<button class="btn" style="background-color:orange; color: white" type="button">Search</button>
+      	</form>
+	</nav>
+
+	<div class="container-fluid p-5 text-white text-center" style="background-color: orange; margin-top:50px;">
+  		<h1><marquee>YOUR FAVOURITE GADGET SHOP</marquee></h1> 
+	</div>
+
+	<!-- LIST PHONE SIDE -->
+	<div class="row">
+		<div class="col-sm-3">
+			<div class="container mt-3">
+  				<div class="list-group list-group-flush">
+  					<a href="iphone.html" class="list-group-item list-group-item-action">Iphone</a>
+  					<a href="samsung.html" class="list-group-item list-group-item-action">Samsung</a>
+  					<a href="xiaomi.html" class="list-group-item list-group-item-action">Xiaomi</a>
+  					<a href="realme.html" class="list-group-item list-group-item-action">Realme</a>
+  					<a href="vivo.html" class="list-group-item list-group-item-action">Vivo</a>
+				</div>
+
+  				<br><br>
+
+
+  				<!-- Button to Open the Modal -->
+				<div class="btn-group-vertical">
+  					<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalcontact">Contact</button>
+  					<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalnews">Newsletter</button>
+  					<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalsubs">Subscribe</button>
+				</div>
+
+  				<!-- the modal : contact -->
+  				<div class="modal fade" id="modalcontact">
+  					<div class="modal-dialog">
+    					<div class="modal-content">
+
+      					<!-- Modal Header -->
+      					<div class="modal-header" style="background-color:orange;">
+        					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      					</div>
+
+      					<!-- Modal body -->
+      					<div class="modal-body">
+        				
+        				<div class="col p-5" style=" text-align: center;">
+      						<br>
+      						<h3 class="text-center">Contact Us</h3>
+      						<a href="https://instagram.com/" target="_blank">
+                    		<button class="btn"><i class="fa-brands fa-instagram fa-2xl"></i></button>
+                			</a>
+
+                			<a href="https://facebook.com/" target="_blank">
+                    		<button class="btn"><i class="fa-brands fa-facebook fa-2xl"></i></button>
+                			</a>
+
+                			<a href="https://syafiqpauzi777@gmail.com/" target="_blank">
+                    		<button class="btn"><i class="fa-solid fa-envelope fa-2xl"></i></button>
+                			</a>
+
+                			<a href="https://www.twitter.com/" target="_blank">
+                    		<button class="btn"><i class="fa-brands fa-twitter fa-2xl"></i></button>
+                			</a>
+      					</div>
+
+      					</div>
+
+    					</div>
+  					</div>
+				</div>
+
+				<!-- the modal : newsletter -->
+  				<div class="modal fade" id="modalnews">
+  					<div class="modal-dialog">
+    					<div class="modal-content">
+
+      					<!-- Modal Header -->
+      					<div class="modal-header" style="background-color:orange;">
+        					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      					</div>
+
+      					<!-- Modal body -->
+      					<div class="modal-body">
+        				<div class="col p-5" style=" text-align: center;">
+      						
+      						<div class="d-grid text-center">
+      							<h2>NEWSLETTER</h2>
+      							<p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      							<input type="email" class="form-control" id="email" placeholder="Enter your e-mail" name="email">
+      							<br>
+      							<button type="submit" class="btn btn-block" style="background-color:orange; color:white;">Subcribe</button>
+      						</div>
+      					</div>
+      					</div>
+
+    					</div>
+  					</div>
+				</div>
+
+				<!-- the modal : subscribe -->
+  				<div class="modal fade" id="modalsubs">
+  					<div class="modal-dialog">
+    					<div class="modal-content">
+
+      					<!-- Modal Header -->
+      					<div class="modal-header" style="background-color:orange;">
+        					<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      					</div>
+
+      					<!-- Modal body -->
+      					<div class="modal-body">
+        				<div class="col p-5" style=" text-align: center;">
+      						
+      						<div class="d-grid text-center">
+      							<h2>SUBSCRIBE</h2>
+      							<p>To get special offers and VIP treatment:</p>
+      							<input type="email" class="form-control" id="email" placeholder="Enter your e-mail" name="email">
+      							<br>
+      							<button type="submit" class="btn btn-block" style="background-color:orange; color:white;">Subscribe</button>
+      						</div>
+      					</div>
+      					</div>
+
+    					</div>
+  					</div>
+				</div>
+
+  			</div>
+  		</div>
+
+  		<div class="col-sm-9">
+  			<br>
+  			<!-- Carousel -->
+			<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  			<!-- Indicators/dots -->
+  			<div class="carousel-indicators">
+    			<button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    			<button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    			<button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+ 			 </div>
+
+  			<!-- The slideshow/carousel -->
+  			<div class="carousel-inner">
+    			<div class="carousel-item active">
+      				<img src="iphone13banner.jpg" alt="Iphone" class="d-block w-50% mx-auto">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="samsungbanner.png" alt="Samsung" class="d-block w-50% mx-auto">
+    			</div>
+    			<div class="carousel-item">
+      				<img src="xiaomibanner.png" alt="Xiaomi" class="d-block w-50% mx-auto">
+    			</div>
+  			</div>
+
+  			<!-- Left and right controls/icons -->
+  			<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    			<span class="carousel-control-prev-icon"></span>
+  			</button>
+  			<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    			<span class="carousel-control-next-icon"></span>
+  			</button>
+			</div>
+  		</div>
+	</div>
+
+	<!-- LIST PHONE CARD IMAGE -->
+	<div class="row">
+		<div class="col-sm-3">
+			<br>
+		</div>
+
+		<div class="col-sm-9">
+			<br>
+
+			<div class="row">
+				<div class="col-sm">
+				<div class="container mt-3">
+  				<div class="card" style="width:400px">
+    				<img class="card-img-top" src="iphone11.jpeg" alt="Card image" style="width:100%">
+    				<div class="card-body">
+      					<h4 class="card-title">Iphone Phones</h4>
+      					<p class="card-text">See some list of Iphone phones</p>
+      					<a href="iphone.html" class="btn" style="background-color:orange; color: white">SHOP NOW</a>
+    				</div>
+  				</div>
+				</div>
+				</div>
+
+				<div class="col-sm">
+					<div class="container mt-3">
+  					<div class="card" style="width:400px">
+    				<img class="card-img-top" src="samsunga51b.jpeg" alt="Card image" style="width:100%">
+    				<div class="card-body">
+      					<h4 class="card-title">Samsung</h4>
+      					<p class="card-text">See some list of Samsung phones</p>
+      					<a href="samsung.html" class="btn" style="background-color:orange; color: white">SHOP NOW</a>
+    				</div>
+  					</div>
+					</div>
+				</div>
+
+				<div class="col-sm">
+					<div class="container mt-3">
+  					<div class="card" style="width:400px">
+    				<img class="card-img-top" src="redminote10prob.jpeg" alt="Card image" style="width:100%">
+    				<div class="card-body">
+      					<h4 class="card-title">Xiaomi</h4>
+      					<p class="card-text">See some list of Xiaomi phones</p>
+      					<a href="xiaomi.html" class="btn" style="background-color:orange; color: white">SHOP NOW</a>
+    				</div>
+  					</div>
+					</div>
+				</div>
+
+				<div class="col-sm">
+					<div class="container mt-3">
+  					<div class="card" style="width:400px">
+    				<img class="card-img-top" src="realme5prob.jpeg" alt="Card image" style="width:100%">
+    				<div class="card-body">
+      					<h4 class="card-title">Realme</h4>
+      					<p class="card-text">See some list of Realme phones</p>
+      					<a href="realme.html" class="btn" style="background-color:orange; color: white">SHOP NOW</a>
+    				</div>
+  					</div>
+					</div>
+				</div>
+
+				<div class="col-sm">
+					<div class="container mt-3">
+  					<div class="card" style="width:400px">
+    				<img class="card-img-top" src="vivoy17b.jpeg" alt="Card image" style="width:100%">
+    				<div class="card-body">
+      					<h4 class="card-title">Vivo</h4>
+      					<p class="card-text">See some list of Vivo phones</p>
+      					<a href="vivo.html" class="btn" style="background-color:orange; color: white">SHOP NOW</a>
+    				</div>
+  					</div>
+					</div>
+				</div>
+
+				
+			</div>
+
+		</div>
+
+	</div>
+
+	<br>
+
+</body>
+
+<!-- FOOTER -->
+<footer>
+	<div class="row text-white rounded" style="background-color: orange;">
+			<div class="col">
+				<br>
+				<h3 class="text-center">Subscribe</h3>
+				<p class="text-center"> To get special offers and VIP treatment: </p>
+
+				<div class="p-5">
+				<label for="email">Enter e-mail:</label>
+      			<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      			<br>
+
+      			<button type="submit" class="btn btn-light">Subscribe</button>
+      			</div>
+      			<br><br>
+      		</div>
+
+      		<div class="col p-5" style=" text-align: center;">
+      			<br>
+      			<h3 class="text-center">Contact Us</h3>
+      			<a href="https://instagram.com/" target="_blank">
+                    <button class="btn"><i class="fa-brands fa-instagram fa-2xl"></i></button>
+                </a>
+
+                <a href="https://facebook.com/" target="_blank">
+                    <button class="btn"><i class="fa-brands fa-facebook fa-2xl"></i></button>
+                </a>
+
+                <a href="https://syafiqpauzi777@gmail.com/" target="_blank">
+                    <button class="btn"><i class="fa-solid fa-envelope fa-2xl"></i></button>
+                </a>
+
+                <a href="https://twitter.com/" target="_blank">
+                    <button class="btn"><i class="fa-brands fa-twitter fa-2xl"></i></button>
+                </a>
+
+      		</div>
+    </div>
+
+    <div class="row rounded" style="background-color:white; color:black;">
+				<div class="col">
+					<br>
+					<h3 class="text-center">Comments</h3>
+					<p class="text-center"> Got comments? Go ahead. </p>
+
+      				<div class="p-5">
+      					<input type="name" class="form-control" id="name" placeholder="Name" name="nama">
+      					<br>
+      			
+      					<input type="email" class="form-control" id="email" placeholder="Email" name="email">
+      					<br>
+      			
+      					<input type="subject" class="form-control" id="subject" placeholder="Subject" name="subject">
+      					<br>
+      			
+      					<label for="email">Message:</label>
+      					<textarea class="form-control" rows="5" id="message" name="message"></textarea>
+      					<br>	
+
+      					<button type="submit" class="btn" style="background-color:orange; color:white;">Send</button>
+      				</div>
+      			</div>
+
+      			
+    </div>
+
+</footer>
+
+<!-- 1. TOP FUNCTION --->
+<script>
+	// GET BUTTON
+    var mybutton = document.getElementById("goUp");
+
+   	// SHOW BUTTON
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+            }
+        }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    } 
+</script>
+
+</html>
